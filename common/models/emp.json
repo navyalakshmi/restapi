@@ -1,0 +1,57 @@
+{
+  "name": "emp",
+  "plural": "emps",
+  "base": "PersistedModel",
+  
+  "options": {
+    "idInjection": true,
+    "mysql": {
+      "schema": "employee",
+      "table": "emp"
+    },
+    "validateUpsert": true
+  },
+  "properties": {
+    "eid": {
+      "type": "number",
+      "required": true,
+      "id":true,
+      "mysql": {
+        "columnName": "eid",
+        "dataType": "number",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "ename": {
+      "type": "string",
+      "required": true,
+      "mysql": {
+        "columnName": "ename",
+        "dataType": "string",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "enum": {
+      "type": "number",
+      "required": true,
+      "mysql": {
+        "columnName": "enum",
+        "dataType": "number",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
